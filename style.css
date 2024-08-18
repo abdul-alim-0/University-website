@@ -90,7 +90,7 @@ nav img{
 
 
 /* Navigation side bar */
-nav .fa{
+nav .fa-solid{
     display: none;
 }
 
@@ -103,21 +103,24 @@ nav .fa{
     .nav-links ul li{
         display: block;
     }
-    .nav-links ul{
+    .nav-links{
         position: absolute;
         background: #f44336;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: 0;
+        right: -300px;
         text-align: left;
         z-index: 2;
     }
-    nav .fa{
-        display: visible;
+    nav .fa-solid{
+        display: block;
         color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
     }
 }
